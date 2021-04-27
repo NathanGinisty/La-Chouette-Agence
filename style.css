@@ -822,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1039,110 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.header-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+
+/* -------------------------- INFO -------------------------- */
+
+.info-header-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+}
+
+.info-text-small {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.info-block {
+
+}
+
+.info-block:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.info-block:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+
+
+/* ------------------------- COMMENT ------------------------- */
+.comment-block {
+    margin: 0 20% 0 20%;
+    text-align: center;
+}
+
+.comment-block:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.comment-block:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+.comment-text {
+    font-size: 22px;
+    font-style: italic;
+    text-align: justify;
+    color:#484848;
+}
+
+.comment-text-author {
+    margin-top: 10px;
+    font-size: 16px;
+    color:#484848;
+}
+
+.comment-text-author-link {
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .comment-block {
+        margin: 0 10% 0 10%;
+    }
+}
+
+/* ------------------------- OTHERS ------------------------- */
+
+.contact-text {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+
+}
+
+.contact-text:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact-text:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.3s;
 }
