@@ -741,6 +741,26 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    max-width: 280px;
+    margin: 0 auto 15px auto;
+}
+
+.portfolio-thumb:hover
+{
+    filter: saturate(2);
+    transition-duration: 0.3s;
+}
+
+.portfolio-thumb:not(hover)
+{
+    filter: saturate(1);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 767px) {
+    .portfolio-thumb {
+        max-width: 320px;
+    }
 }
 
 .portfolio-row {
@@ -1124,7 +1144,7 @@ h4 {
     .comment-block {
         margin: 0 10% 0 10%;
     }
-
+    
     .comment-block:hover {
         transform: scale(1);
     }
@@ -1134,7 +1154,7 @@ h4 {
     .comment-block {
         margin: 0 5px 0 5px;
     }
-
+    
     .comment-block:hover {
         transform: scale(1);
     }
@@ -1147,7 +1167,7 @@ h4 {
     text-align: center;
     font-size: 22px;
     color: white;
-
+    
 }
 
 .contact-text:hover {
