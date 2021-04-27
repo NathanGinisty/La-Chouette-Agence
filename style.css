@@ -1051,6 +1051,7 @@ h4 {
     font-weight: bold;
     text-align: center;
     margin: 0 0 20px 0;
+    color: #333333;
 }
 
 
@@ -1071,7 +1072,7 @@ h4 {
 }
 
 .info-block {
-
+    display: initial;
 }
 
 .info-block:hover {
@@ -1119,9 +1120,23 @@ h4 {
     font-style: italic;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
     .comment-block {
         margin: 0 10% 0 10%;
+    }
+
+    .comment-block:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 425px) {
+    .comment-block {
+        margin: 0 5px 0 5px;
+    }
+
+    .comment-block:hover {
+        transform: scale(1);
     }
 }
 
@@ -1145,4 +1160,36 @@ h4 {
 .contact-text:not(hover) {
     transform: scale(1);
     transition-duration: 0.3s;
+}
+
+
+.contact-button {
+    margin: 0 auto 0 auto;
+    
+    background-color: #9356dc; /* For browsers that do not support gradients */
+    background-image: linear-gradient(0deg, #9356dc, #FF79DA);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(210, 210, 210);
+    
+    margin-top: 26px;
+    text-align: center;
+    width: max-content;
+}
+
+
+.contact-button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.contact-button:not(hover) {
+    transform: scale(1);
+    transition-duration: 0.3s;
+}
+
+
+.contact-button-text {
+    color: white;
+    font-size: 18px;
+    padding: 16px 36px 16px 36px;
 }
