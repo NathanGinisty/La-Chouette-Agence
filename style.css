@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/kingthings-petrock');
+
 body {
     margin: 0;
     padding: 0;
@@ -283,9 +285,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -338,7 +337,8 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 18px 8px 18px 0;
+    padding: 0;
     border: 0px;
 }
 
@@ -639,20 +639,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
 
 .container {
     max-width: 1000px;
@@ -720,10 +706,6 @@ h3 {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
 }
 
 h4 {
@@ -922,8 +904,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1066,7 +1048,7 @@ h4 {
 /* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
 
-.header-title {
+.heading-title {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
@@ -1074,10 +1056,22 @@ h4 {
     color: #333333;
 }
 
+.big-title {
+    font-family: 'Kingthings Petrock Light', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: #F3976C;
+}
+
+@media (max-width: 550px) {
+    .big-title {
+        font-size: 11vw
+    }
+}
 
 /* -------------------------- INFO -------------------------- */
 
-.info-header-title {
+.info-heading-title {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
@@ -1089,6 +1083,14 @@ h4 {
     line-height: 20px;
     text-align: justify;
     text-align-last: center;
+}
+
+.info-text-small-marginbot {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    text-align-last: center;
+    margin-bottom: 20px;
 }
 
 .info-block {
@@ -1160,7 +1162,7 @@ h4 {
     }
 }
 
-/* ------------------------- OTHERS ------------------------- */
+/* ------------------------ CONTACTS ------------------------ */
 
 .contact-text {
     margin-top: 30px;
@@ -1212,4 +1214,29 @@ h4 {
     color: white;
     font-size: 18px;
     padding: 16px 36px 16px 36px;
+}
+
+/* ------------------------- OTHERS ------------------------- */
+
+.container-portfolio {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nopad-nomarg {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------- HEADER ------------------------- */
+
+.header-logo {
+    height:50px;
+    /* margin: auto 0; */
+}
+
+@media (max-width: 375px) {
+    .header-logo {
+        height:50px;
+    }
 }
