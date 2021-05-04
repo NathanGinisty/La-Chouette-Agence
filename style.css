@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/kingthings-petrock');
+@import url('https://fonts.cdnfonts.com/css/kingthings-petrock');
 
 body {
     margin: 0;
@@ -1057,13 +1057,21 @@ h4 {
 }
 
 .heading-title-contact {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     margin: 0 0 20px 0;
     color: white;
-    text-shadow: 1px 1px 1px lightgrey;
 }
+
+.heading-title-grey {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: rgb(83, 83, 83);
+}
+
 
 .big-title {
     font-family: 'Kingthings Petrock Light', sans-serif;
@@ -1072,8 +1080,20 @@ h4 {
     color: #F3976C;
 }
 
+
+.big-title-white {
+    font-family: 'Kingthings Petrock Light', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
 @media (max-width: 550px) {
     .big-title {
+        font-size: 11vw
+    }
+
+    .big-title-white {
         font-size: 11vw
     }
 }
